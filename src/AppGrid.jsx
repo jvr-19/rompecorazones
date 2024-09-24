@@ -9,7 +9,7 @@ function AppGrid() {
     <>
         <Grid container>
           <Grid size={{xs: 12, sm: 4, md: 6, lg: 2, xl: 12}}>
-            <Button variant="contained" fullWidth>1</Button>
+            <Button variant="outlined" fullWidth>1</Button>
           </Grid>
           <Grid size={{xs: 12, sm: 4, md: 6, lg: 2, xl: 12}}>
             <Button variant="contained" fullWidth>2</Button>
