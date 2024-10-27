@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css'
-import Button from '@mui/material/Button'
+import { CustomButton } from 'libreria';
 import Typography from '@mui/material/Typography'
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
@@ -47,9 +47,13 @@ function Ficha({ animal, atribute, imageUrl, imageSize, description }) {
                     height={imageSize}
                 />
 
-                {/* <Button variant='text' onClick={handleClick} size='medium' color='secondary'>Tocame la pita: {count} pitos</Button> */}
-                {/* <Button variant='contained' onClick={handleClick} size='large' sx={{ color: 'white', backgroundColor: 'green' }}>Tocame la pita: {count} pitos</Button> */}
-                <Button variant='outlined' onClick={handleClick} color='secondary'>Tocame la pita: {count} pitos</Button>
+                <CustomButton
+                    text={`Tocame la pita: ${count} pitos`}
+                    txtcolor='white'
+                    bgcolor='purple'
+                    size='medium'
+                    onClick={handleClick}
+                />
 
             </Stack>
 
